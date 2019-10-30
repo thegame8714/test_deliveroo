@@ -1,0 +1,30 @@
+.innerArea {
+  composes: innerArea from '../../App.module.scss';
+  flex-direction: column;
+}
+.restaurantNumber {
+  display: flex;
+  align-self: flex-start;
+  margin: 30px 0 15px 0;
+  color: #828585;
+  font-weight: 500;
+
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+
+.restaurantList {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  &:after {
+    content: '';
+    flex-basis: calc(33% - 30px);
+  }
+  @media (max-width: 1024px) {
+    padding: 10px;
+  }
+}

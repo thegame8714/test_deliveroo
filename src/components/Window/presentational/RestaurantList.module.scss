@@ -1,0 +1,41 @@
+.tag {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: #828585;
+  font-size: 14px;
+
+  &:after {
+    position: relative;
+    display: inline-flex;
+    content: '\00b7';
+    padding: 0 5px;
+    align-self: center;
+    font-size: 25px;
+  }
+}
+
+.restaurant {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-width: 30%;
+
+  @media (max-width: 425px) {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+}
+
+.price {
+  color: #828585;
+  font-size: 14px;
+}

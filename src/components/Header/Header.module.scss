@@ -1,0 +1,7 @@
+.header {
+  composes: innerArea from '../../App.module.scss';
+  .logo {
+    max-width: 138px;
+    max-height: 36px;
+  }
+}
